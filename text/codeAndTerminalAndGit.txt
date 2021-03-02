@@ -1,0 +1,181 @@
+Copyright (C) Microsoft Corporation. All rights reserved.
+새로운 크로스 플랫폼 PowerShell 사용 https://aka.ms/pscore6
+
+PS C:\Ascii_friendly_Repository\movieql> git init .
+Initialized empty Git repository in C:/Ascii_friendly_Repository/movieql/.git/
+PS C:\Ascii_friendly_Repository\movieql> git remote add origin https://github.com/Calli-T/movieql.git
+PS C:\Ascii_friendly_Repository\movieql> git pull origin master     
+fatal: couldn't find remote ref master
+PS C:\Ascii_friendly_Repository\movieql> git pull origin main       
+PS C:\Ascii_friendly_Repository\movieql> git status
+On branch master
+
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)    
+        package.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Ascii_friendly_Repository\movieql> git remote show origin     
+* remote origin
+  Push  URL: https://github.com/Calli-T/movieql.git
+  HEAD branch: (unknown)
+PS C:\Ascii_friendly_Repository\movieql> $git push movieql master   
+위치 줄:1 문자:6
++ $git push movieql master
++      ~~~~
+식 또는 문에서 예기치 않은 'push' 토큰입니다.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsE  
+   rrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+PS C:\Ascii_friendly_Repository\movieql> $ git push movieql master  
+$ : '$' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로 
+그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포 
+함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
++ $ git push movieql master
++ ~
+    + CategoryInfo          : ObjectNotFound: ($:String) [], Comma  
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Ascii_friendly_Repository\movieql> git remote show origin     
+  Fetch URL: https://github.com/Calli-T/movieql.git
+  Push  URL: https://github.com/Calli-T/movieql.git
+  HEAD branch: (unknown)
+PS C:\Ascii_friendly_Repository\movieql> git push -u origin master  
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Calli-T/movieql.git'
+PS C:\Ascii_friendly_Repository\movieql> git push -u origin main    
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Calli-T/moviePS C:\Ascii_friendly_Repository\movieql> $ git remote master        
+$ : '$' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로 
+그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포 
++ $ git remote master
++ ~
+    + CategoryInfo          : ObjectNotFound: ($:String) [], Comma  
+   ndNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Ascii_friendly_Repository\movieql> git push origin branch     
+error: failed to push some refs to 'https://github.com/Calli-T/movieql.git'
+PS C:\Ascii_friendly_Repository\movieql> git remote show origin     
+
+* remote origin
+  Fetch URL: https://github.com/Calli-T/movieql.git
+  Push  URL: https://github.com/Calli-T/movieql.git
+  HEAD branch: (unknown)
+PS C:\Ascii_friendly_Repository\movieql> git remote add origin https://github.com/Calli-T/movieql.git
+>> git branch -M main
+>> git push -u origin main
+fatal: remote origin already exists.
+error: refname refs/heads/master not found
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Calli-T/movieql.git'
+PS C:\Ascii_friendly_Repository\movieql> ^C
+PS C:\Ascii_friendly_Repository\movieql> echo "# movieql" >> README.md
+>> git init
+>> git add README.md
+>> git commit -m "first commit"
+>> git branch -M main
+>> git remote add origin https://github.com/Calli-T/movieql.git     
+>> git push -u origin main
+Reinitialized existing Git repository in C:/Ascii_friendly_Repositor[master (root-commit) b6604fb] first commit
+ create mode 100644 README.md
+fatal: remote origin already exists.
+Enumerating objects: 3, done.
+Writing objects: 100% (3/3), 236 bytes | 236.00 KiB/s, done.        
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Calli-T/movieql.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.   
+PS C:\Ascii_friendly_Repository\movieql> git pull origin master     
+fatal: couldn't find remote ref master
+PS C:\Ascii_friendly_Repository\movieql> git pull origin main       
+From https://github.com/Calli-T/movieql
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Ascii_friendly_Repository\movieql> npm i graphql-yoga
+npm WARN deprecated @types/graphql@14.5.0: This is a stub types definition. graphql provides its own type definitions, so you do not need this installed.
+npm WARN deprecated apollo-upload-server@7.1.0: Please migrate to https://npm.im/graphql-upload (see https://git.io/fADhl).
+npm WARN deprecated graphql-import@0.7.1: GraphQL Import has been deprecated and merged into GraphQL Tools, so it will no longer get updates. Use GraphQL Tools instead to stay up-to-date! Check out https://www.graphql-tools.com/docs/migration-from-import for migration and https://the-guild.dev/blog/graphql-tools-v6 for new changes.       
+npm WARN deprecated core-js@2.6.12: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.     
+
+> core-js@2.6.12 postinstall C:\Ascii_friendly_Repository\movieql\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) 
+for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN graphql-subscriptions@0.5.8 requires a peer of graphql@^0.10.5 || ^0.11.3 || ^0.12.0 || ^0.13.0 but none is installed. You must install peer dependencies yourself.
+npm WARN graphql-playground-middleware-lambda@1.7.12 requires a peer of aws-lambda@^0.1.2 but none is installed. You must install peer dependencies yourself.
+npm WARN apollo-server-core@1.4.0 requires a peer of graphql@^0.9.0 
+|| ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 but none is installed. You must install peer dependencies yourself.
+npm WARN apollo-tracing@0.1.4 requires a peer of graphql@0.10.x - 0.13.x but none is installed. You must install peer dependencies yourself.
+ - 0.13.x but none is installed. You must install peer dependencies 
+yourself.
+npm WARN apollo-cache-control@0.1.1 requires a peer of graphql@0.10.x - 0.13.x but none is installed. You must install peer dependencies yourself.
+
++ graphql-yoga@1.18.3
+added 130 packages from 224 contributors and audited 130 packages in 19.94s
+found 4 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details       
+PS C:\Ascii_friendly_Repository\movieql> npm audit fix
+npm WARN apollo-cache-control@0.1.1 requires a peer of graphql@0.10.x - 0.13.x but none is installed. You must install peer dependencies yourself.
+npm WARN apollo-server-core@1.4.0 requires a peer of graphql@^0.9.0 
+|| ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 but none is installed. You must install peer dependencies yourself.
+npm WARN apollo-tracing@0.1.4 requires a peer of graphql@0.10.x - 0.13.x but none is installed. You must install peer dependencies yourself.
+npm WARN graphql-extensions@0.0.10 requires a peer of graphql@0.10.xyourself.
+npm WARN graphql-playground-middleware-lambda@1.7.12 requires a peer of aws-lambda@^0.1.2 but none is installed. You must install peer dependencies yourself.
+npm WARN graphql-subscriptions@0.5.8 requires a peer of graphql@^0.10.5 || ^0.11.3 || ^0.12.0 || ^0.13.0 but none is installed. You must install peer dependencies yourself.
+
+up to date in 0.988s
+fixed 0 of 4 vulnerabilities in 130 scanned packages
+PS C:\Ascii_friendly_Repository\movieql> $ npm add graph-yoga       
+$ : '$' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로 
+그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포 
+함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
+위치 줄:1 문자:1
++ $ npm add graph-yoga
++ ~
+    + CategoryInfo          : ObjectNotFound: ($:String) [], Comma  
+   ndNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PS C:\Ascii_friendly_Repository\movieql> yarn add graph-yoga        
+yarn : 'yarn' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있  
+는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경 
+로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.     
+위치 줄:1 문자:1
++ yarn add graph-yoga
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (yarn:String) [], Co  
+   mmandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Ascii_friendly_Repository\movieql> npm add graphql-yoga       
+npm WARN deprecated apollo-upload-server@7.1.0: Please migrate to https://npm.im/graphql-upload (see https://git.io/fADhl).
+npm WARN deprecated @types/graphql@14.5.0: This is a stub types definition. graphql provides its own type definitions, so you do not need this installed.
+npm WARN deprecated graphql-import@0.7.1: GraphQL Import has been deprecated and merged into GraphQL Tools, so it will no longer get updates. Use GraphQL Tools instead to stay up-to-date! Check out https://www.graphql-tools.com/docs/migration-from-import for migration and https://the-guild.dev/blog/graphql-tools-v6 for new changes.       
+npm WARN deprecated core-js@2.6.12: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.     
+npm WARN graphql-playground-middleware-lambda@1.7.12 requires a peer of aws-lambda@^0.1.2 but none is installed. You must install peer dependencies yourself.
+npm WARN graphql-subscriptions@0.5.8 requires a peer of graphql@^0.10.5 || ^0.11.3 || ^0.12.0 || ^0.13.0 but none is installed. You must install peer dependencies yourself.
+npm WARN apollo-server-core@1.4.0 requires a peer of graphql@^0.9.0 
+|| ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 but none is installed. You must install peer dependencies yourself.
+npm WARN apollo-cache-control@0.1.1 requires a peer of graphql@0.10.x - 0.13.x but none is installed. You must install peer dependenciesnpm WARN apollo-tracing@0.1.4 requires a peer of graphql@0.10.x - 0.13.x but none is installed. You must install peer dependencies yourself.
+npm WARN graphql-extensions@0.0.10 requires a peer of graphql@0.10.x - 0.13.x but none is inst - 0.13.x but none is installed. You must install peer dependencies 
+yourself.
+
++ graphql-yoga@1.18.3
+updated 1 package and audited 130 packages in 6.092s
+found 4 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details       
+PS C:\Ascii_friendly_Repository\movieql> git pull origin main       
+From https://github.com/Calli-T/movieql
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Ascii_friendly_Repository\movieql>

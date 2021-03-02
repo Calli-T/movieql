@@ -1,0 +1,93 @@
+cd C:\Ascii_fridly_Repository
+mkdir movieql
+cd movieql
+npm init
+
+-- 작성 --
+-- github저장소 생성 --
+-- 입력 --
+
+.code
+
+ git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Calli-T/movieql.git     
+git push -u origin main
+
+npm i graphql-yoga
+
+git pull origin main
+
+--초기 세팅 완료--
+
+- 0.3 -
+graphQl은 2가지 문제를 해결할 수가 있다
+over-fetcing은 원하는것보다 과한 정보량을 받는것이고
+under-fetchinng은 여러 번의 통신 끝에 원하는것을 받는 것이다
+무엇을 요구하는지 객체 형태로 보낼 수 있다.
+
+-0.4-
+npm i -g nodemon
+
+package.json에서
+main": "index.js",
+  "scripts": {
+    "start":"nodemon"
+  },
+
+npm i -g bable-cli --ignore-engines(관리자모드)
+
+start":"nodemon --exec babel-node"
+
+start":"nodemon --exec babel-node index.js"
+
+.babelrc생성, 
+{
+    "presets" : ["env", "stage-3"]
+} 삽입
+
+npm i babel-cli babel-preset-env babel-preset-stage-3 --dev
+GraphQL server변수 선언후 start
+
+schema는 사용자에게 보내거나 받을 data에대한 설명
+
+deprecated된게 있다
+npm i nodemon -D
+npm i @babel/cli -D
+npm i @babel/core -D
+npm i @babel/node -D
+npm i @babel/preset-env -D
+
+뒤에 붙은 -D 는 --save-dev 의, i 는 install의 약어입니다.
+
+- 0.5 -
+graphql/schema.graphql 생성
+type Query{
+    name: String!
+}
+작성후 
+서버객체 안에 
+typeDefs: "graphql/schema.graphql"
+query를 해결하기위해 graphql폴더안에 resolvers.js생성
+export할 객체(리턴 메소드를 가진)를 export 및 index에서 import
+
+babel 3 deprecated됨
+{
+    "presets": [
+    [
+    "@babel/preset-env",
+    {
+    "useBuiltIns": "entry",
+    "corejs": 3
+    }
+    ]
+    ]
+} 쓸것
+
+localhost: 4000
+yoga에 포함된 playground가 나온다
+
+- 0.6 -
+

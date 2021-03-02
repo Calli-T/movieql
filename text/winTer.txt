@@ -1,0 +1,67 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+새로운 크로스 플랫폼 PowerShell 사용 https://aka.ms/pscore6
+
+PS C:\Users\김재환> cd C:\Ascii_friendly_Repository
+PS C:\Ascii_friendly_Repository> mkdir movieql
+
+
+    디렉터리: C:\Ascii_friendly_Repository
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2021-03-02   오후 1:48                movieql
+
+
+PS C:\Ascii_friendly_Repository> cd movieql
+PS C:\Ascii_friendly_Repository\movieql> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (movieql)
+version: (1.0.0)
+description: Movie API with Graphql
+entry point: (index.js)
+test command: tt
+git repository: https://github.com/Calli-T/movieql.git
+keywords: movieql
+author: Kim
+About to write to C:\Ascii_friendly_Repository\movieql\package.json:
+
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "description": "Movie API with Graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "tt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calli-T/movieql.git"
+  },
+  "keywords": [
+    "movieql"
+  ],
+  "author": "Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calli-T/movieql/issues"
+  },
+  "homepage": "https://github.com/Calli-T/movieql#readme"
+}
+
+
+Is this OK? (yes) yes
+PS C:\Ascii_friendly_Repository\movieql> . code
+PS C:\Ascii_friendly_Repository\movieql> . code
+PS C:\Ascii_friendly_Repository\movieql>
