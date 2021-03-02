@@ -1,6 +1,12 @@
+const USDK = {
+  name: "Ultra Sword Dark knight",
+  level: 243,
+  job: "bishop",
+};
+
 const resolvers = {
   Query: {
-    name: () => "Dynast",
+    user: () => USDK,
   },
 };
 export default resolvers;

@@ -90,4 +90,6 @@ localhost: 4000
 yoga에 포함된 playground가 나온다
 
 - 0.6 -
+query와 schema를 동시에 수정해줘야한다
+test는 playground에서
 

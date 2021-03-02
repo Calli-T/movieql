@@ -1,3 +1,9 @@
-type Query {
+type USDK {
   name: String!
+  level: Int!
+  job: String!
+}
+
+type Query {
+  user: USDK!
 }
