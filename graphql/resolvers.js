@@ -1,12 +1,14 @@
-const USDK = {
-  name: "Ultra Sword Dark knight",
-  level: 243,
-  job: "bishop",
-};
+import { users, getById, deleteMovie, addMovie, movies } from "./db";
 
 const resolvers = {
   Query: {
-    user: () => USDK,
+    users: () => users,
+    user: (_, { id }) => getById(id),
+    movies: () => movies,
+  },
+  Mutation: {
+    addMovie: (_, { name, score }) => addMovie(name, score),
+    deleteMovie: (_, { id }) => deleteMovie(id),
   },
 };
 export default resolvers;

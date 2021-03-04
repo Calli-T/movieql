@@ -93,3 +93,18 @@ yoga에 포함된 playground가 나온다
 query와 schema를 동시에 수정해줘야한다
 test는 playground에서
 
+
+- 0.7 -
+배열반환가능
+DB다른파일에 저장 export import
+
+- 0.8 -
+operation에 본인의 데이터가 보일 방식을 정의하고 질문에 응답할 함수를 제작
+
+- 0.9 -
+DB가 변할 때는 Mutation
+
+- 0.11 -
+Schema에서
+addMovie의 경우 더한 Movie를 return 하므로 뭘 받을건지를 알려줘야하지만,
+deleteMovie의 경우 단순히 Boolean 하나라서 뭘 return 할 건지는 알려줘야할 필요가없다
